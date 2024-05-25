@@ -65,17 +65,18 @@ app.post('/districts/', async (req, res) => {
     INSERT INTO 
     district 
     (
-      district_name,
+      
       state_id,
+      district_name,
       cases,
       cured,
       active,
-      deaths,   
+      deaths   
     )
     VALUES
     (
-      '${districtName}',
-      ${stateId},
+      '${stateId}',
+      ${districtName},
       ${cases},
       ${cured},
       ${active},
